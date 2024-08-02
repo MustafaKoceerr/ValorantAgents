@@ -10,19 +10,28 @@ import com.example.valorantagents.databinding.FragmentFavoriteBinding
 import com.example.valorantagents.ui.base.BaseFragment
 
 class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>() {
+
     override fun getFragmentViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
     ): FragmentFavoriteBinding {
-        return FragmentFavoriteBinding.inflate(inflater,container,false)
+        return FragmentFavoriteBinding.inflate(inflater, container, false)
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = super.onCreateView(inflater, container, savedInstanceState)
+
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
-
-
 
 
 }
