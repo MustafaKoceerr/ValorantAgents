@@ -16,7 +16,6 @@ abstract class BaseRepository {
             try {
                 val temp = apiCall.invoke()
                 Log.d("Error", "api call senden $temp ")
-
                 // invoke() ile bizim retrofit isteğimizi attık, bunu coroutines içinde
                 // çağırdığımıza dikkat et.
                 // if it be successful we will take result directly
