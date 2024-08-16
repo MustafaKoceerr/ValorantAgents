@@ -11,7 +11,6 @@ interface IAgentApi {
         private val BASE_URL = "https://valorant-api.com/"
 
         operator fun invoke(): IAgentApi {
-
             return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(BASE_URL)
