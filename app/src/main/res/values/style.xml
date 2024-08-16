@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="titleText">
+        <item name="android:height"> @dimen/title_height</item>
+        <item name="android:width"> @dimen/title_width</item>
+        <item name="android:textSize"> @dimen/title_text_size</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+</resources>
